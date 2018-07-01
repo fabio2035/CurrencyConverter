@@ -59,7 +59,7 @@ module.exports = {
 	}).then(function(val){
 		let result_ = document.getElementById('result');
 		console.log(val);
-		if(val == null ){
+		if(val === 'undefined' ){
 		result_.value = 'no offline values!';
 		}else{
 		result_.value = val*userinput;	
@@ -69,7 +69,6 @@ module.exports = {
 }
 
 },{"idb":3}],2:[function(require,module,exports){
-//let dbref = require('./db');
 let dbref = require('./IndexController');
 window.onload = populateSelect();
 
@@ -181,17 +180,6 @@ function getCurrencies(){
 		//result_.value = res;	
 		}	
 }
-
-	
-
-
-
-
-	
-	
-
-		
-
 },{"./IndexController":1}],3:[function(require,module,exports){
 'use strict';
 

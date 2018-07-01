@@ -1,4 +1,3 @@
-//let dbref = require('./db');
 let dbref = require('./IndexController');
 window.onload = populateSelect();
 
@@ -110,13 +109,3 @@ function getCurrencies(){
 		//result_.value = res;	
 		}	
 }
-
-	
-
-
-
-
-	
-	
-
-		
